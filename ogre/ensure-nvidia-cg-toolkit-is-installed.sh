@@ -30,17 +30,7 @@ if [ $OS != "Linux" ]; then
 fi
 
 if [ -e /usr/include/Cg/cg.h -a \
-     -e /usr/include/Cg/cgGL.h -a \
-     -e /usr/lib/libCg.so -a \
-     -e /usr/lib/libCgGL.so ]; then
-    echo "Package nvidia-cg-toolkit seems to be correctly installed."
-    exit 0
-fi
-
-if [ -e /usr/include/Cg/cg.h -a \
-     -e /usr/include/Cg/cgGL.h -a \
-     -e /usr/lib64/libCg.so -a \
-     -e /usr/lib64/libCgGL.so ]; then
+     -e /usr/include/Cg/cgGL.h ]; then
     echo "Package nvidia-cg-toolkit seems to be correctly installed."
     exit 0
 fi
