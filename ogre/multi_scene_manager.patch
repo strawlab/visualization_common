@@ -1,0 +1,13 @@
+--- OgreMain/src/OgreRenderQueueSortingGrouping.cpp	2010-04-24 09:59:51.000000000 -0700
++++ OgreMain/src/OgreRenderQueueSortingGrouping.cpp.new	2011-06-20 15:48:37.462077448 -0700
+@@ -382,8 +382,8 @@
+                 retPair = mGrouped.insert(
+                     PassGroupRenderableMap::value_type(
+ 						pass, OGRE_NEW_T(RenderableList, MEMCATEGORY_SCENE_CONTROL)() ));
+-                assert(retPair.second && 
+-					"Error inserting new pass entry into PassGroupRenderableMap");
++                //assert(retPair.second && 
++		//			"Error inserting new pass entry into PassGroupRenderableMap");
+                 i = retPair.first;
+             }
+             // Insert renderable
