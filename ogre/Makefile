@@ -2,7 +2,7 @@ all: ogre
 
 OGRE_VERSION = ogre_src_v1-7-3
 TARBALL = build/$(OGRE_VERSION).tar.bz2
-TARBALL_URL = http://pr.willowgarage.com/downloads/$(OGRE_VERSION).tar.bz2
+TARBALL_URL = http://static.strawlab.org/downloads/$(OGRE_VERSION).tar.bz2
 SOURCE_DIR = build/$(OGRE_VERSION)
 UNPACK_CMD = tar xf
 MD5SUM_FILE = $(OGRE_VERSION).tar.bz2.md5sum
